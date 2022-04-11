@@ -1,0 +1,15 @@
+<%- include('./partials/header'); -%>
+    <!-- <h1>Hello</h1>
+    <p>startingContent</p> -->
+
+
+    <%console.log("parsed data", postData)%>
+    
+    <% let post = JSON.parse(JSON.stringify(postData)) %>
+    <h1><%= postData.title %></h1> 
+    <p><%= postData.content %></p>
+
+   
+   
+    
+    <%- include('./partials/footer'); -%>
